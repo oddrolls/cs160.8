@@ -1,0 +1,14 @@
+STAIRCASE - TIME COMPLEXITY:
+For Staircase, the time complexity is O(n) because there is a single for loop. 
+STAIRCASE - SPACE COMPLEXITY: 
+Staircase's space complexity is O(1), because it does not store, read, or create any other recursive stack calls. 
+
+ALT. CHARACTERS - TIME COMPLEXITY:
+The time complexity for Alternating Characters is O(s^n), because it relies on the amount of times it calls itself recursively. It is dependent on the length of s, the string input. 
+ALT. CHARACTERS - SPACE COMPLEXITY:
+Alt. Characters' Space Complexity is O(n), because it once again depends on how many times the recursive function is called. Each time the recursive function is called, it creates a
+queue of functions still left to be called. 
+ALT. CHARACTERS - RECURSIVE DEFINITION:
+The recursive definition is defined in the last line of code, which reads "return counter + alternatingCharacters(s.substring(1));". In a more plain-text definition, the 
+recursive definition is the current count of letters to remove plus the answer of alternatingCharacters of the current string minus the first character. Thus, we are able
+to test the entire string in segments, even though it might not be the most effective way to complete this problem (see: timeout error on multiple test cases). 
